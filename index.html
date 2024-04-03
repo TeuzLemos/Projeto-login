@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <main>
@@ -19,12 +21,17 @@
                 </p>
                 <form action="form.php" method="post">
                         <div>
-                            <label for="iemail">E-mail</label>
-                            <input type="email" name="email" id="iemail">
+                            <i class="material-symbols-outlined ">Person</i>
+                            <input type="email" name="email" id="iemail" placeholder="Seu e-mail" autocomplete="email" maxlength="40" required>
                         </div>
                         <div>
-                            <label for="isenha">Senha</label>
-                            <input type="password" name="senha" id="isenha">
+                            <i class="material-symbols-outlined ">key</i>
+                            <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar">
+                            <a href="#" id="botao">Esqueci minha senha</a>
+                            <i class="material-symbols-outlined ">email</i>
                         </div>
                 </form>
             </div>
