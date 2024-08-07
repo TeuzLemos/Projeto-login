@@ -23,12 +23,15 @@ main {
     position: relative;
     width: 100vw;
     height: 100vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login {
     position: absolute;
-    top: 50%;
-    left: 50%;
     overflow: hidden;
     
     background-color: white;
@@ -39,8 +42,6 @@ section#login {
     
     transition: width .3s, height .3s;
     transition-timing-function: ease;
-    transform: translate(-50%, -50%);
-
 }
 
 section#login > div#imagem {
